@@ -1,0 +1,575 @@
+﻿{
+  "fields": [
+    {
+      "name": "_id",
+      "path": "_id",
+      "count": 14,
+      "types": [
+        {
+          "name": "ObjectID",
+          "bsonType": "ObjectID",
+          "path": "_id",
+          "count": 14,
+          "values": [
+            "5919f772697cd5a1b49f0f6a",
+            "5919f772697cd5a1b49f0f6b",
+            "5919f772697cd5a1b49f0f6c",
+            "5919f772697cd5a1b49f0f6d",
+            "59280e64db0eb50e2ced7b33",
+            "59286944e2342e02308aebd4",
+            "592869c8e2342e02308aebd5",
+            "59286a36e2342e02308aebd6",
+            "59286a88e2342e02308aebd7",
+            "59286ad5e2342e02308aebd8",
+            "59286b25e2342e02308aebd9",
+            "59286bcae2342e02308aebda",
+            "5928aedf4497b30c281ee58c",
+            "5928afd54497b30c281ee58d"
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 14,
+          "has_duplicates": false
+        }
+      ],
+      "total_count": 14,
+      "type": "ObjectID",
+      "has_duplicates": false,
+      "probability": 1
+    },
+    {
+      "name": "affectation",
+      "path": "affectation",
+      "count": 14,
+      "types": [
+        {
+          "name": "String",
+          "bsonType": "String",
+          "path": "affectation",
+          "count": 14,
+          "values": [
+            "TCBR",
+            "TCBR",
+            "FCBR",
+            "FCBR",
+            "TCBR",
+            "BR",
+            "BR",
+            "TCBR",
+            "UTT",
+            "UTT",
+            "UTT",
+            "UTT",
+            "FCBR",
+            "FCBR"
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 4,
+          "has_duplicates": true
+        }
+      ],
+      "total_count": 14,
+      "type": "String",
+      "has_duplicates": true,
+      "probability": 1
+    },
+    {
+      "name": "code",
+      "path": "code",
+      "count": 14,
+      "types": [
+        {
+          "name": "String",
+          "bsonType": "String",
+          "path": "code",
+          "count": 14,
+          "values": [
+            "GL02",
+            "NF16",
+            "IF16",
+            "IF08",
+            "NF20",
+            "IF07",
+            "LO02",
+            "ST09",
+            "LE03",
+            "GE31",
+            "AP03",
+            "GE32",
+            "IF17",
+            "IF20"
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 14,
+          "has_duplicates": false
+        }
+      ],
+      "total_count": 14,
+      "type": "String",
+      "has_duplicates": false,
+      "probability": 1
+    },
+    {
+      "name": "credit",
+      "path": "credit",
+      "count": 14,
+      "types": [
+        {
+          "name": "String",
+          "bsonType": "String",
+          "path": "credit",
+          "count": 10,
+          "values": [
+            "6",
+            "6",
+            "6",
+            "30",
+            "4",
+            "4",
+            "4",
+            "4",
+            "6",
+            "6"
+          ],
+          "total_count": 0,
+          "probability": 0.7142857142857143,
+          "unique": 3,
+          "has_duplicates": true
+        },
+        {
+          "name": "Int32",
+          "bsonType": "Int32",
+          "path": "credit",
+          "count": 4,
+          "values": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "total_count": 0,
+          "probability": 0.2857142857142857,
+          "unique": 1,
+          "has_duplicates": true
+        }
+      ],
+      "total_count": 14,
+      "type": [
+        "String",
+        "Int32"
+      ],
+      "has_duplicates": true,
+      "probability": 1
+    },
+    {
+      "name": "description",
+      "path": "description",
+      "count": 14,
+      "types": [
+        {
+          "name": "String",
+          "bsonType": "String",
+          "path": "description",
+          "count": 14,
+          "values": [
+            "Cette unité de valeur permet d’étudier les méthodes de prévision de la demande (à court et long terme) et les politiques de gestion de stocks dans différentes confi gurations (mono, multi-produit, mono, multi-site, déterministes ou aléatoires).",
+            "L’objectif de l’UV est de comprendre et mettre en oeuvre les concepts fondamentaux liés à la mise en place et à l’utilisation des bases de données relationnelles.",
+            "Concepts et mise en oeuvre des Systèmes d’Information pour la coopération dans divers contextes (intranet, extranet, mobilité, Web 2.0).",
+            "L’objectif de cette UV est l’appropriation des principes et techniques du management de projets informatiques, tant du point de vue de la maîtrise d’oeuvre que de la maîtrise d’ouvrage.",
+            "La modélisation et l’évaluation sont importantes pour la performance des systèmes informatiques. Des modèles à base de graphes, des algorithmes effi caces associés, ainsi que le calcul de la complexité algorithmique sont abordés dans ce module.",
+            "Le personnel en entreprise doit se former, modifier ses connaissances et adapter ses compétences à un\nrythme de plus en plus accéléré. Pour faire face à cette situation, les solutions de formation traditionnelles\nsont enrichies. Ce cours permet de mettre en relation les théories de l’apprentissage et les plateformes\nactuelles.",
+            "L’objectif de cette UE est de comprendre et utiliser l’approche orientée objet pour la mise en oeuvre de projets logiciels. Elle propose de mener de front la conception détaillée (en UML) et le développement (en Java) d’unmême projet.",
+            "Le stage ST09 a pour objectifs de développer la connaissance du milieu de l’entreprise, d’appliquer et valoriser\nles connaissances et savoir-faire acquis à l’UTT, de réaliser un travail personnel mettant en oeuvre des\ncompétences techniques et de valider l’orientation professionnelle et le choix de filière.",
+            "Consolidations lexicales et grammaticales de niveau B2. Maîtrise de la communication dans des situations variées de la vie courante et professionnelle.",
+            "Découvrir et comprendre en début de cursus le fonctionnement des différents rouages de l’entreprise. Acquérir les éléments fondamentaux de la gestion d’entreprise en y incluant les bases de la comptabilitégénérale.",
+            "Exprimer dans une série d’images son univers personnel, donner image(s) à son imaginaire grâce au\ntraitement actuel de la photographie en infographie.",
+            "Approfondir ses connaissances en gestion. Acquérir une formation sur le diagnostic financier de l’entreprise. Maîtriser les outils indispensables à la prise de décision lors d’investissements",
+            "Les objectifs de ce cours consistent à appréhender les enjeux, les outils et les difficultés liées à la conception et à l’intégration d’applications à caractère décisionnel au sein des Systèmes d’Information ainsi qu’à acquérir des notions concernant la fouille de données dans des grands volumes de données.",
+            "L’approche par les processus est au coeur du management moderne des entreprises. Dans cette approche, les processus actuels sont décrits et optimisés, et de nouveaux processus sont conçus ainsi que les Systèmes\nd’Information associés. Ce cours enseigne la modélisation de processus qui est le prérequis d’une adoption de\nl’approche par les processus."
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 14,
+          "has_duplicates": false
+        }
+      ],
+      "total_count": 14,
+      "type": "String",
+      "has_duplicates": false,
+      "probability": 1
+    },
+    {
+      "name": "filiere",
+      "path": "filiere",
+      "count": 14,
+      "types": [
+        {
+          "name": "Array",
+          "bsonType": "Array",
+          "path": "filiere",
+          "count": 10,
+          "types": [
+            {
+              "name": "String",
+              "bsonType": "String",
+              "path": "filiere",
+              "count": 14,
+              "values": [
+                "MPL",
+                "MSI",
+                "MPL",
+                "MSI",
+                "MRI",
+                "LIB",
+                "LIB",
+                "LIB",
+                "LIB",
+                "LIB",
+                "MPL",
+                "MSI",
+                "MSI",
+                "MRI"
+              ],
+              "total_count": 0,
+              "probability": 0.9333333333333333,
+              "unique": 4,
+              "has_duplicates": true
+            },
+            {
+              "name": "Null",
+              "bsonType": "Null",
+              "path": "filiere",
+              "count": 1,
+              "total_count": 0,
+              "probability": 0.06666666666666667,
+              "unique": 1,
+              "has_duplicates": false
+            }
+          ],
+          "lengths": [
+            2,
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2
+          ],
+          "total_count": 15,
+          "probability": 0.7142857142857143,
+          "average_length": 1.5
+        },
+        {
+          "name": "Null",
+          "bsonType": "Null",
+          "path": "filiere",
+          "count": 4,
+          "total_count": 0,
+          "probability": 0.2857142857142857,
+          "unique": 1,
+          "has_duplicates": true
+        }
+      ],
+      "total_count": 14,
+      "type": [
+        "Array",
+        "Null"
+      ],
+      "has_duplicates": true,
+      "probability": 1
+    },
+    {
+      "name": "importance",
+      "path": "importance",
+      "count": 14,
+      "types": [
+        {
+          "name": "String",
+          "bsonType": "String",
+          "path": "importance",
+          "count": 10,
+          "values": [
+            "80",
+            "72",
+            "82",
+            "100",
+            "97",
+            "50",
+            "72",
+            "50",
+            "67",
+            "56"
+          ],
+          "total_count": 0,
+          "probability": 0.7142857142857143,
+          "unique": 8,
+          "has_duplicates": true
+        },
+        {
+          "name": "Int32",
+          "bsonType": "Int32",
+          "path": "importance",
+          "count": 4,
+          "values": [
+            80,
+            80,
+            60,
+            50
+          ],
+          "total_count": 0,
+          "probability": 0.2857142857142857,
+          "unique": 3,
+          "has_duplicates": true
+        }
+      ],
+      "total_count": 14,
+      "type": [
+        "String",
+        "Int32"
+      ],
+      "has_duplicates": true,
+      "probability": 1
+    },
+    {
+      "name": "mark",
+      "path": "mark",
+      "count": 14,
+      "types": [
+        {
+          "name": "Int32",
+          "bsonType": "Int32",
+          "path": "mark",
+          "count": 10,
+          "values": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "total_count": 0,
+          "probability": 0.7142857142857143,
+          "unique": 1,
+          "has_duplicates": true
+        },
+        {
+          "name": "Double",
+          "bsonType": "Double",
+          "path": "mark",
+          "count": 4,
+          "values": [
+            5,
+            5,
+            7.5,
+            7.5
+          ],
+          "total_count": 0,
+          "probability": 0.2857142857142857,
+          "unique": 2,
+          "has_duplicates": true
+        }
+      ],
+      "total_count": 14,
+      "type": [
+        "Int32",
+        "Double"
+      ],
+      "has_duplicates": true,
+      "probability": 1
+    },
+    {
+      "name": "programme",
+      "path": "programme",
+      "count": 14,
+      "types": [
+        {
+          "name": "Array",
+          "bsonType": "Array",
+          "path": "programme",
+          "count": 14,
+          "types": [
+            {
+              "name": "String",
+              "bsonType": "String",
+              "path": "programme",
+              "count": 59,
+              "values": [
+                "modéliser les fonctions d’un logiciel",
+                "spécifi er des formats de données et des traitements",
+                "contrôler la conformité à une spécifi cation",
+                "conduire une inspection des sources d’un projet logiciel",
+                "coordonner des développements en équipe",
+                "réaliser un projet complet en petite équipe afi n de participer à l’ensemble des étapes d’un projet d’ingénierie logicielle",
+                "se former en autonomie à la ma?trise d’un langage de programmation (Python, Javascript,Ruby ou Lua)",
+                "modéliser une base de données en utilisant l’approche Entité/Association",
+                "formaliser l’interrogation de bases de données au moyen du calcul relationnel et de l’algèbre relationnelle",
+                "manipuler une base de données par le langage SQL",
+                "structurer une base de données relationnelle par la normalisation",
+                "optimiser les requêtes, le stockage et l’accès aux données",
+                "maîtriser les modèles du TCAO sur les plans fonctionne et techniques, au service de la dynamique des communautés, des réseaux sociaux et des systèmes sociotechniques basés sur ces modèles",
+                "modéliser l’activité coopérative et les patterns de collaboration avec la méthode Semé",
+                "conduire de bout en bout un microprojet original, appliquant des technologies récentes (architectures de participation, wikis, forums, cartographie participative, workfl ow, confrontation de points de vue) et apportant des réponses innovantes aux besoins de clients réalistes",
+                "appliquer les techniques, normes et méthodes de planifi cation, mettre en place un plan d’activités",
+                "gérer les risques, proposer des mesures d’urgence effi caces",
+                "mettre en oeuvre des techniques, normes et méthodes de travail collaboratif, coordonner des développements en équipe",
+                "produire de la documentation",
+                "gérer la relation client, accompagner le changement",
+                "modéliser des problèmes à l’aide de graphes, y compris les graphes spatio-temporels",
+                "résoudre des problèmes à l’aide d’algorithmes efficaces",
+                "identifier les structures de données les plus adaptées au problème et aux algorithmes associés",
+                "déterminer la complexité asymptotique (le pire des cas, le meilleur des cas, moyen et optimale)",
+                "classifier un problème selon sa nature (P, NP, NP-complet et NP-difficile) et appliquer une stratégie de résolution en conséquence",
+                "mettre en ouvre les méthodes de l’ingénierie pédagogique et de scénarisation des Environnements Informatiques pour l’Apprentissage Humain (EIAH) : rapid learning, serious game, apprentissage en réseau, enseignement mobile ou pervasif, cours en ligne ouverts et massifs (MOOC)",
+                "∙∙paramétrer et utiliser les plateformes de logiciels libres et les applications éducatives du Web 2.0",
+                "comprendre les concepts de l’approche orientée objet et les traduire en UML et en Java",
+                "connaître et réutiliser les bibliothèques et fonctions essentielles de Java2 SE (Standard Edition)",
+                "concevoir une architecture orientée objet sur la base d’exigences fonctionnelles",
+                "connaître et savoir intégrer des patrons de conception élémentaires dans la production de code",
+                "documenter une API avec Javadoc",
+                "être capable de s’intégrer dans un contexte professionnel nouveau",
+                "être capable de mobiliser les connaissances et savoir-faire acquis en formation pour apporter de la valeur ajoutée à l’organisme d’accueil",
+                "être capable de réaliser, de manière autonome et avec le niveau de responsabilité requis, des activités relevant de son champ de compétences",
+                "être capable de valoriser les activités réalisées, les résultats obtenus et les nouvelles compétences acquises aussi bien par écrit qu’à l’oral",
+                "être capable de s’exprimer de manière continue sur un vaste champ de sujets courants et professionnels",
+                "∙∙comprendre l’idée principale et les détails d’un discours portant sur des thèmes familiers et hors routine",
+                "∙∙identifier rapidement et de manière fine les informations importantes d’un texte écrit",
+                "∙∙produire des demandes écrites de manière précise et professionnelle, sous réserve de vérification du travail fourni",
+                "examen de thèmes couvrant tous les aspects d’applications de la vie courante pour une entreprise industrielle ou commerciale : TVA, factures d’achat et de vente, effets de commerce, amortissements, cessions, provisions, comptes de résultat, bilan, annexe, SIG, capacité d’autofinancement, fonds de roulement, besoin en FR",
+                "illustration par de nombreux cas réels concernant la vie quotidienne d’une entreprise",
+                "∙∙panorama du traitement de l’image depuis l’apparition des nouvelles technologies",
+                "problématique du collage, des oeuvres peintes d’Arcimboldo à l’époque de la Renaissance aux images virtuelles d’artistes et de graphistes contemporains en passant par les Surréalistes et les Dadaïstes",
+                "recherches et élaboration d’un projet d’images sous forme de portfolio",
+                "réalisation d’une galerie virtuelle",
+                "maîtrise de la trésorerie et de sa gestion à court terme",
+                "analyse financière et notion de risque financier",
+                "rentabilité d’une entreprise et impact de ses investissements",
+                "critères d’évaluation d’un projet d’investissement et choix du financement",
+                "analyses de cas pratiques et de cas réels d’entreprises françaises dans divers secteurs industriels",
+                "analyser les enjeux et les spécificités des projets décisionnels",
+                "concevoir des architectures matérielles et logicielles pour l’informatique décisionnelle",
+                "concevoir des entrepôts de données (datawarehouse)",
+                "mettre en évidence les problèmes et solutions technologiques liés à l’approvisionnement en données des entrepôts (hétérogénéité, volumétrie)",
+                "identifier et modéliser des processus",
+                "maîtriser pratiquer un outil logiciel de modélisation de processus",
+                "gérer un projet de modélisation de processus",
+                "lier modélisation de processus et conception des applications du Système d’Information"
+              ],
+              "total_count": 0,
+              "probability": 1,
+              "unique": 59,
+              "has_duplicates": false
+            }
+          ],
+          "lengths": [
+            7,
+            5,
+            3,
+            5,
+            5,
+            2,
+            5,
+            4,
+            4,
+            2,
+            4,
+            5,
+            4,
+            4
+          ],
+          "total_count": 59,
+          "probability": 1,
+          "average_length": 4.214285714285714
+        }
+      ],
+      "total_count": 14,
+      "type": "Array",
+      "has_duplicates": false,
+      "probability": 1
+    },
+    {
+      "name": "type",
+      "path": "type",
+      "count": 14,
+      "types": [
+        {
+          "name": "String",
+          "bsonType": "String",
+          "path": "type",
+          "count": 14,
+          "values": [
+            "CS",
+            "CS",
+            "TM",
+            "TM",
+            "CS",
+            "TM",
+            "TM",
+            "ST",
+            "EC",
+            "ME",
+            "HT",
+            "ME",
+            "TM",
+            "TM"
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 6,
+          "has_duplicates": true
+        }
+      ],
+      "total_count": 14,
+      "type": "String",
+      "has_duplicates": true,
+      "probability": 1
+    },
+    {
+      "name": "wording",
+      "path": "wording",
+      "count": 14,
+      "types": [
+        {
+          "name": "String",
+          "bsonType": "String",
+          "path": "wording",
+          "count": 14,
+          "values": [
+            "Fondements de l’ingénierie logicielle",
+            "Bases de données",
+            "Travail collaboratif assisté par ordinateur",
+            "Management de projets informatiques",
+            "Modélisation et évaluation des systèmes complexes",
+            "Ingénierie pédagogique et formation en ligne (e-learning)",
+            "Principe et pratique de la programmation orientée objets",
+            "Stage professionnel",
+            "Anglais - Niveau pratique B2",
+            "L’entreprise et la gestion",
+            "Image, imaginaire et nouvelles technologies",
+            "Ingénierie financière de l’entreprise",
+            "Architectures décisionnelles",
+            "Modélisation de processus métier"
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 14,
+          "has_duplicates": false
+        }
+      ],
+      "total_count": 14,
+      "type": "String",
+      "has_duplicates": false,
+      "probability": 1
+    }
+  ],
+  "count": 14
+}

@@ -1,0 +1,55 @@
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 page-header">
+                <h1>Incription</h1>
+            </div>
+            <!-- /.col-lg-12 -->
+            
+        </div>
+		<p><br></p>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Input your information necessary</h3>
+                    </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form role="form" method="post">
+                                        <div class="form-group" id="div_u">
+	                                            <input class="form-control" placeholder="Username" id="username" name="username" onChange="reg_check_username()">
+                                        </div>
+                                        <div class="form-group" id="div_e" >
+                                            <input class="form-control" id="email" placeholder="E-mail" name="email" type="email"  onChange="reg_check_email()" autofocus>
+                                        </div>
+                                        <div class="form-group" id="div_p">
+                                            <input class="form-control" id="pwd" placeholder="Password" name="password" type="password" onChange="reg_check_pwd()">
+                                        </div>
+                                        <div class="form-group" id="div_rp">
+                                            <input class="form-control" id="rpwd" placeholder="Repeat your password" name="r_password" type="password" onChange="reg_check_rpwd()">
+                                        </div>
+                                        <div class="form-group">
+                                        	<select class="form-control" id="type" name="type">
+                                        	  <option value="student">Student</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                        	<div class="g-recaptcha" data-sitekey="6Lc8VB8UAAAAALdtNz2WMR9K2crxaq-UXrNaHm4V" align="center"></div>
+                                        </div>
+                                        <button id="_reg_btn" onClick="reg_on_creat_account()" class="btn btn-lg btn-success btn-block" data-loading-text="Creating..." type="button" >Creat</button>
+                                    </form>
+                                    <p></p>
+                          <div class="alert alert-danger fade in" role="alert" hidden="true" id="e_error">
+                        </div>
+                        <div class="alert alert-danger fade in" role="alert" hidden="true" id="error">
+                          <button type="button" class="close" onClick="reg_clear_error()">
+                          <span aria-hidden="true">&times;</span></button>
+                          <strong>ERROR:</strong><div id="err_info"></div>
+                        </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

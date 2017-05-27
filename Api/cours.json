@@ -1,0 +1,82 @@
+{
+  "data": [
+    {
+      "code": "GL02",
+      "type": "CS",
+      "affectation": "TCBR",
+      "filiere": null,
+      "credit": 6,
+      "wording": "Fondements de l¡¯ing¨¦nierie logicielle",
+      "description": "Cette unit¨¦ de valeur permet d¡¯¨¦tudier les m¨¦thodes de pr¨¦vision de la demande (¨¤ court et long terme) et les politiques de gestion de stocks dans diff¨¦rentes confi gurations (mono, multi-produit, mono, multi-site, d¨¦terministes ou al¨¦atoires).",
+      "programme": [
+        "mod¨¦liser les fonctions d¡¯un logiciel",
+        "sp¨¦cifi er des formats de donn¨¦es et des traitements",
+        "contr?ler la conformit¨¦ ¨¤ une sp¨¦cifi cation",
+        "conduire une inspection des sources d¡¯un projet logiciel",
+        "coordonner des d¨¦veloppements en ¨¦quipe",
+        "r¨¦aliser un projet complet en petite ¨¦quipe afi n de participer ¨¤ l¡¯ensemble des ¨¦tapes d¡¯un projet d¡¯ing¨¦nierie logicielle",
+        "se former en autonomie ¨¤ la ma?trise d¡¯un langage de programmation (Python, Javascript,Ruby ou Lua)"
+      ],
+      "importance": 40,
+      "mark": 5
+    },
+    {
+      "code": "NF16",
+      "type": "CS",
+      "affectation": "TCBR",
+      "filiere": null,
+      "credit": 6,
+      "wording": "Bases de donn¨¦es",
+      "description": "L¡¯objectif de l¡¯UV est de comprendre et mettre en oeuvre les concepts fondamentaux li¨¦s ¨¤ la mise en place et ¨¤ l¡¯utilisation des bases de donn¨¦es relationnelles.",
+      "programme": [
+        "mod¨¦liser une base de donn¨¦es en utilisant l¡¯approche Entit¨¦/Association",
+        "formaliser l¡¯interrogation de bases de donn¨¦es au moyen du calcul relationnel et de l¡¯alg¨¨bre relationnelle",
+        "manipuler une base de donn¨¦es par le langage SQL",
+        "structurer une base de donn¨¦es relationnelle par la normalisation",
+        "optimiser les requ¨ºtes, le stockage et l¡¯acc¨¨s aux donn¨¦es"
+      ],
+      "importance": 80,
+      "mark": 5
+    },
+    {
+      "code": "IF16",
+      "type": "TM",
+      "affectation": "FCBR",
+      "filiere": [ "MPL", "MSI" ],
+      "credit": 6,
+      "wording": "Travail collaboratif assist¨¦ par ordinateur",
+      "description": "Concepts et mise en oeuvre des Syst¨¨mes d¡¯Information pour la coop¨¦ration dans divers contextes (intranet, extranet, mobilit¨¦, Web 2.0).",
+      "programme": [
+        "ma?triser les mod¨¨les du TCAO sur les plans fonctionne et techniques, au service de la dynamique des communaut¨¦s, des r¨¦seaux sociaux et des syst¨¨mes sociotechniques bas¨¦s sur ces mod¨¨les",
+        "mod¨¦liser l¡¯activit¨¦ coop¨¦rative et les patterns de collaboration avec la m¨¦thode Sem¨¦",
+        "conduire de bout en bout un microprojet original, appliquant des technologies r¨¦centes (architectures de participation, wikis, forums, cartographie participative, workfl ow, confrontation de points de vue) et apportant des r¨¦ponses innovantes aux besoins de clients r¨¦alistes"
+      ],
+      "importance": 60,
+      "mark": 5
+    },
+     {
+      "code": "IF08",
+      "type": "TM",
+      "affectation": "FCBR",
+      "filiere": [ "MPL", "MSI", "MRI" ],
+      "credit": 6,
+      "wording": "Management de projets informatiques",
+      "description": "L¡¯objectif de cette UV est l¡¯appropriation des principes et techniques du management de projets informatiques, tant du point de vue de la ma?trise d¡¯oeuvre que de la ma?trise d¡¯ouvrage.",
+      "programme": [
+        "appliquer les techniques, normes et m¨¦thodes de planifi cation, mettre en place un plan d¡¯activit¨¦s",
+        "g¨¦rer les risques, proposer des mesures d¡¯urgence effi caces",
+        "mettre en oeuvre des techniques, normes et m¨¦thodes de travail collaboratif, coordonner des d¨¦veloppements en ¨¦quipe",
+        "produire de la documentation",
+        "g¨¦rer la relation client, accompagner le changement"
+      ],
+      "importance": 50,
+      "mark": 5
+    }
+  ]
+}
+
+
+
+
+
+

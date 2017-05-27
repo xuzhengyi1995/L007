@@ -1,0 +1,48 @@
+<div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Your account</h3>
+                    </div>
+                    <div class="panel-body">
+                    	<p>Your account information</p>
+                        <table class="table" width="100%" align="center">
+                        <tr align="center">
+                            <th>Uid</th>
+                            <th>Username</th>
+                            <th>E-mail</th>
+                            <th>Type</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="form-control" id="ac_uid" name="ac_uid" size="4" value=""></td>
+                            <td><input type="text" class="form-control" id="ac_username" name="ac_username" size="6" value=""></td>
+                            <td><input type="text" class="form-control" id="ac_email" name="ac_email" size="10" value=""></td>
+                            <td><input type="text" class="form-control" id="ac_type" name="ac_type" size="6" value=""></td>
+                        </tr>
+                    </table>
+                    <p>Your student information</p>
+                       <table class="table" width="100%" align="center">
+                        <tr align="center">
+                            <th>Sid</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Adminssion</th>
+                            <th>Filiere</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="form-control" id="ac_sid" name="ac_sid" size="6" value=""></td>
+                            <td><input type="text" class="form-control" id="ac_nom" name="ac_nom" size="6" value=""></td>
+                            <td><input type="text" class="form-control" id="ac_prenom" name="ac_prenom" size="6" value=""></td>
+                            <td><input type="text" class="form-control" id="ac_adm" name="ac_adm" size="6" value=""></td>
+                            <td><input type="text" class="form-control" id="ac_filiere" name="ac_filiere" size="6" value=""></td>
+                        </tr>
+                    </table>
+                    <div align="center">
+                    <button id="add_cursus" type="button" class="btn btn-primary btn-lg btn-block" onclick="ac_change_sid()">Save</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/account.js" type="text/javascript"></script>

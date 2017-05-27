@@ -1,0 +1,39 @@
+<head>
+    <meta charset="utf-8">
+</head>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Importation</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Choisi un fichier de l'extension de .csv ou .xlsx
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form id="import_form" enctype="multipart/form-data" method="post">
+                            <fieldset>
+                                <div class="form-inline">
+                                    <label>Choisir</label>
+                                    <input id="csv" name="csv" type="file" title="csv" class="btn btn-lg btn-block">
+                                    <button id="import_btn" onClick="import_check_import('/api/import_csv/')" class="btn btn-lg btn-success btn-block" data-loading-text="En chargeant" type="button" ><span class="glyphicon glyphicon-save" aria-hidden="true"></span></button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <p></p>
+                        <div class="alert alert-danger fade in" role="alert" hidden="true" id="error">
+                            <button type="button" class="close" onClick="import_clear_error()">
+                                <span aria-hidden="true">&times;</span></button>
+                            <strong>ERROR:</strong><div id="err_info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

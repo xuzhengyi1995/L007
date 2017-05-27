@@ -1,0 +1,135 @@
+{
+  "fields": [
+    {
+      "name": "_id",
+      "path": "_id",
+      "count": 3,
+      "types": [
+        {
+          "name": "ObjectID",
+          "bsonType": "ObjectID",
+          "path": "_id",
+          "count": 3,
+          "values": [
+            "5926aabc15ecec2b68cc1499",
+            "59281e74db0eb50e2ced7b34",
+            "5928ba8ede9dbe1978faaf2b"
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 3,
+          "has_duplicates": false
+        }
+      ],
+      "total_count": 3,
+      "type": "ObjectID",
+      "has_duplicates": false,
+      "probability": 1
+    },
+    {
+      "name": "code",
+      "path": "code",
+      "count": 3,
+      "types": [
+        {
+          "name": "String",
+          "bsonType": "String",
+          "path": "code",
+          "count": 3,
+          "values": [
+            "GL02",
+            "NF20",
+            "LO02"
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 3,
+          "has_duplicates": false
+        }
+      ],
+      "total_count": 3,
+      "type": "String",
+      "has_duplicates": false,
+      "probability": 1
+    },
+    {
+      "name": "email",
+      "path": "email",
+      "count": 3,
+      "types": [
+        {
+          "name": "String",
+          "bsonType": "String",
+          "path": "email",
+          "count": 3,
+          "values": [
+            "xuzhengyi1995@126.com",
+            "xuzhengyi1995@126.com",
+            "xuzhengyi1995@126.com"
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 1,
+          "has_duplicates": true
+        }
+      ],
+      "total_count": 3,
+      "type": "String",
+      "has_duplicates": true,
+      "probability": 1
+    },
+    {
+      "name": "note",
+      "path": "note",
+      "count": 3,
+      "types": [
+        {
+          "name": "Int32",
+          "bsonType": "Int32",
+          "path": "note",
+          "count": 3,
+          "values": [
+            5,
+            10,
+            10
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 2,
+          "has_duplicates": true
+        }
+      ],
+      "total_count": 3,
+      "type": "Int32",
+      "has_duplicates": true,
+      "probability": 1
+    },
+    {
+      "name": "time",
+      "path": "time",
+      "count": 3,
+      "types": [
+        {
+          "name": "Double",
+          "bsonType": "Double",
+          "path": "time",
+          "count": 3,
+          "values": [
+            1495706353447,
+            1495801460219,
+            1495841422391
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 3,
+          "has_duplicates": false
+        }
+      ],
+      "total_count": 3,
+      "type": "Double",
+      "has_duplicates": false,
+      "probability": 1
+    }
+  ],
+  "count": 3
+}

@@ -1,0 +1,299 @@
+{
+  "fields": [
+    {
+      "name": "_id",
+      "path": "_id",
+      "count": 2,
+      "types": [
+        {
+          "name": "ObjectID",
+          "bsonType": "ObjectID",
+          "path": "_id",
+          "count": 2,
+          "values": [
+            "591789ccb90ea65d0c2393ce",
+            "59178b1ab90ea65d0c2393cf"
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 2,
+          "has_duplicates": false
+        }
+      ],
+      "total_count": 2,
+      "type": "ObjectID",
+      "has_duplicates": false,
+      "probability": 1
+    },
+    {
+      "name": "name",
+      "path": "name",
+      "count": 2,
+      "types": [
+        {
+          "name": "String",
+          "bsonType": "String",
+          "path": "name",
+          "count": 2,
+          "values": [
+            "R_FUTUR_BR",
+            "R_ACTUEL_BR"
+          ],
+          "total_count": 0,
+          "probability": 1,
+          "unique": 2,
+          "has_duplicates": false
+        }
+      ],
+      "total_count": 2,
+      "type": "String",
+      "has_duplicates": false,
+      "probability": 1
+    },
+    {
+      "name": "rules",
+      "path": "rules",
+      "count": 2,
+      "types": [
+        {
+          "name": "Array",
+          "bsonType": "Array",
+          "path": "rules",
+          "count": 2,
+          "types": [
+            {
+              "name": "Document",
+              "bsonType": "Document",
+              "path": "rules",
+              "count": 29,
+              "fields": [
+                {
+                  "name": "affectation",
+                  "path": "rules.affectation",
+                  "count": 29,
+                  "types": [
+                    {
+                      "name": "String",
+                      "bsonType": "String",
+                      "path": "rules.affectation",
+                      "count": 29,
+                      "values": [
+                        "TCBR",
+                        "FCBR",
+                        "BR",
+                        "BR",
+                        "BR",
+                        "TCBR",
+                        "FCBR",
+                        "BR",
+                        "BR",
+                        "BR",
+                        "BR",
+                        "BR",
+                        "BR",
+                        "BR",
+                        "",
+                        "TCBR",
+                        "FCBR",
+                        "BR",
+                        "BR",
+                        "TCBR",
+                        "FCBR",
+                        "BR",
+                        "BR",
+                        "BR",
+                        "BR",
+                        "BR",
+                        "UTT",
+                        "UTT",
+                        ""
+                      ],
+                      "total_count": 0,
+                      "probability": 1,
+                      "unique": 5,
+                      "has_duplicates": true
+                    }
+                  ],
+                  "total_count": 29,
+                  "type": "String",
+                  "has_duplicates": true,
+                  "probability": 1
+                },
+                {
+                  "name": "check",
+                  "path": "rules.check",
+                  "count": 29,
+                  "types": [
+                    {
+                      "name": "String",
+                      "bsonType": "String",
+                      "path": "rules.check",
+                      "count": 29,
+                      "values": [
+                        "CS+TM",
+                        "CS+TM",
+                        "CS",
+                        "TM",
+                        "CS+TM",
+                        "ST",
+                        "ST",
+                        "EC",
+                        "ME",
+                        "CT",
+                        "ME+CT",
+                        "UTT(CS+TM)",
+                        "SE",
+                        "NPML",
+                        "ALL",
+                        "CS+TM",
+                        "CS+TM",
+                        "CS",
+                        "TM",
+                        "ST",
+                        "ST",
+                        "EC",
+                        "ME",
+                        "CT",
+                        "ME+CT",
+                        "UTT(CS+TM)",
+                        "SE",
+                        "NPML",
+                        "ALL"
+                      ],
+                      "total_count": 0,
+                      "probability": 1,
+                      "unique": 12,
+                      "has_duplicates": true
+                    }
+                  ],
+                  "total_count": 29,
+                  "type": "String",
+                  "has_duplicates": true,
+                  "probability": 1
+                },
+                {
+                  "name": "credit",
+                  "path": "rules.credit",
+                  "count": 29,
+                  "types": [
+                    {
+                      "name": "String",
+                      "bsonType": "String",
+                      "path": "rules.credit",
+                      "count": 29,
+                      "values": [
+                        "42",
+                        "18",
+                        "24",
+                        "24",
+                        "84",
+                        "30",
+                        "30",
+                        "12",
+                        "4",
+                        "4",
+                        "16",
+                        "60",
+                        "0",
+                        "0",
+                        "180",
+                        "54",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "12",
+                        "4",
+                        "4",
+                        "16",
+                        "60",
+                        "0",
+                        "0",
+                        "180"
+                      ],
+                      "total_count": 0,
+                      "probability": 1,
+                      "unique": 12,
+                      "has_duplicates": true
+                    }
+                  ],
+                  "total_count": 29,
+                  "type": "String",
+                  "has_duplicates": true,
+                  "probability": 1
+                },
+                {
+                  "name": "type",
+                  "path": "rules.type",
+                  "count": 29,
+                  "types": [
+                    {
+                      "name": "String",
+                      "bsonType": "String",
+                      "path": "rules.type",
+                      "count": 29,
+                      "values": [
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "EXIST",
+                        "EXIST",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "SUM",
+                        "EXIST",
+                        "EXIST",
+                        "SUM"
+                      ],
+                      "total_count": 0,
+                      "probability": 1,
+                      "unique": 2,
+                      "has_duplicates": true
+                    }
+                  ],
+                  "total_count": 29,
+                  "type": "String",
+                  "has_duplicates": true,
+                  "probability": 1
+                }
+              ],
+              "total_count": 0,
+              "probability": 1
+            }
+          ],
+          "lengths": [
+            15,
+            14
+          ],
+          "total_count": 29,
+          "probability": 1,
+          "average_length": 14.5
+        }
+      ],
+      "total_count": 2,
+      "type": "Array",
+      "has_duplicates": false,
+      "probability": 1
+    }
+  ],
+  "count": 2
+}

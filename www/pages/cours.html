@@ -1,0 +1,109 @@
+<style>
+    .btn_d
+    {
+        width:100px;
+    }
+	.star,.star_n
+	{
+		color:#F03;
+	}
+	.score 
+	{
+		position:absolute;
+		clip:rect(0 0 0 0);
+	}
+	.star_n,.star_no
+	{
+		font-size:30px;
+	}
+</style>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 id="h_cours" class="page-header">Cours in UTT
+        </h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div id="p_cours" class="panel-heading">
+                All cours
+            </div>
+
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <table width="100%" class="table table-striped table-bordered table-hover" id="cours">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- note modal -->
+<div class="modal fade" id="cours_note_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-target=".bs-example-modal-sm">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" id="cours_note_name">
+                <button id="cours_note_modal_close_btn_x" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+              <div class="modal-body" id="cours_note_modal_note">
+                  <div class="row" align="center">
+                      <div class="col-md-4 col-md-offset-4" id="cours_note_change">
+                      
+                          <label onMouseOver="cours_m_over(1)">
+                          <input type="radio" name="RadioGroup1" value="1" id="RadioGroup1_1" class="score" ><span id="n_1" class="glyphicon glyphicon-star star_n" aria-hidden="true"></span>
+                          </label>
+                          <label onMouseOver="cours_m_over(2)">
+                          <input type="radio" name="RadioGroup1" value="2" id="RadioGroup1_2" class="score" ><span id="n_2" class="glyphicon glyphicon-star star_n" aria-hidden="true"></span>
+                          </label>
+                          <label onMouseOver="cours_m_over(3)">
+                          <input type="radio" name="RadioGroup1" value="3" id="RadioGroup1_3" class="score" ><span id="n_3" class="glyphicon glyphicon-star star_n" aria-hidden="true"></span>
+                          </label >
+                          <label onMouseOver="cours_m_over(4)">
+                          <input type="radio" name="RadioGroup1" value="4" id="RadioGroup1_4" class="score" ><span id="n_4" class="glyphicon glyphicon-star star_n" aria-hidden="true"></span>
+                          </label>
+                          <label onMouseOver="cours_m_over(5)">
+                          <input type="radio" name="RadioGroup1" value="5" id="RadioGroup1_5" class="score" ><span id="n_5" class="glyphicon glyphicon-star star_n" aria-hidden="true"></span>
+                          </label>
+                          <label onMouseOver="cours_m_over(6)">
+                          <input type="radio" name="RadioGroup1" value="6" id="RadioGroup1_6" class="score" ><span id="n_6" class="glyphicon glyphicon-star-empty star_no" aria-hidden="true"></span>
+                          </label>
+                          <label onMouseOver="cours_m_over(7)">
+                          <input type="radio" name="RadioGroup1" value="7" id="RadioGroup1_7" class="score" ><span id="n_7" class="glyphicon glyphicon-star-empty star_no" aria-hidden="true"></span>
+                          </label>
+                          <label onMouseOver="cours_m_over(8)">
+                          <input type="radio" name="RadioGroup1" value="8" id="RadioGroup1_8" class="score" ><span id="n_8" class="glyphicon glyphicon-star-empty star_no" aria-hidden="true"></span>
+                          </label>
+                          <label onMouseOver="cours_m_over(9)">
+                          <input type="radio" name="RadioGroup1" value="9" id="RadioGroup1_9" class="score" ><span id="n_9" class="glyphicon glyphicon-star-empty star_no" aria-hidden="true"></span>
+                          </label>
+                          <label onMouseOver="cours_m_over(10)">
+                          <input type="radio" name="RadioGroup1" value="10" id="RadioGroup1_10" class="score" ><span id="n_10" class="glyphicon glyphicon-star-empty star_no" aria-hidden="true"></span>
+                          </label>
+                          <div class="alert alert-danger fade in" role="alert" hidden="true" id="cours_e_error_main">
+                          <strong>Already give a note!</strong>
+                          <div id="cours_e_error">
+                          </div>
+                        </div>
+                      </div>
+                 	</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cours_note_modal_close_btn" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>   
+<!-- note modal -->
+
+<!-- DataTables JavaScript -->
+<script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+<script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+<script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../dist/js/sb-admin-2.js"></script>

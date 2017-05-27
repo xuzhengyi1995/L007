@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Please Log In</h3>
+                </div>
+                <div class="panel-body">
+                    <form id="login_form_f">
+                        <fieldset>
+                            <div class="form-group" id="div_e">
+                                <input class="form-control" id="email" placeholder="E-mail" name="email" type="email"  onChange="login_check_email()" autofocus>
+                            </div>
+                            <div class="form-group" id="div_p">
+                                <input class="form-control" id="pwd" name="password" placeholder="Password" type="password" value="" onChange="login_check_pwd()">
+                            </div>
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6Lc8VB8UAAAAALdtNz2WMR9K2crxaq-UXrNaHm4V" align="center"></div>
+                            </div>
+                            <!-- Change this to a button or input when using this as a form -->
+                            <button id="_login_btn" onClick="login_on_login()" class="btn btn-lg btn-success btn-block" data-loading-text="Logging..." type="button" >Login</button>
+                        </fieldset>
+                    </form>
+                    <p></p>
+                    <div class="alert alert-danger fade in" role="alert" hidden="true" id="e_error">
+                        <strong>Email error!</strong>
+                    </div>
+                    <div class="alert alert-danger fade in" role="alert" hidden="true" id="error">
+                        <button type="button" class="close" onClick="login_clear_error()">
+                            <span aria-hidden="true">&times;</span></button>
+                        <strong>ERROR:</strong><div id="err_info"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

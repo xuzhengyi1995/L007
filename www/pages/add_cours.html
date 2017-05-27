@@ -1,0 +1,80 @@
+<div class="container">
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="login-panel panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Add a cours</h3>
+      </div>
+      <div class="panel-body">
+        <p>Basic information</p>
+        <table class="table" width="100%" align="center">
+          <tr align="center">
+            <th>Code</th>
+            <th>Type</th>
+            <th>Affectation</th>
+            <th>Filiere</th>
+            <th>Credit</th>
+            <th>Importance</th>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control" id="c_code" name="c_code" size="4" value=""></td>
+            <td><select class="selectpicker" data-live-search="true" id="c_type" name="ac_type" data-size="4">
+                <option value="CS">CS</option>
+                <option value="TM">TM</option>
+                <option value="EC">EC</option>
+                <option value="CT">CT</option>
+                <option value="HT">HT</option>
+                <option value="ME">ME</option>
+                <option value="ST">ST</option>
+                <option value="SE">SE</option>
+                <option value="HP">HP</option>
+                <option value="NPML">NPML</option>
+              </select></td>
+            <td><select class="selectpicker" data-live-search="true" id="c_aff" name="c_aff" value="" data-size="4">
+                <option value="TC">TC</option>
+                <option value="BR">BR</option>
+                <option value="TCBR">TCBR</option>
+                <option value="FCBR">FCBR</option>
+                <option value="UTT">UTT</option>
+              </select></td>
+            <td><select class="selectpicker" id="c_fil" name="c_fil" multiple>
+                <option>MPL</option>
+                <option>MSI</option>
+                <option>MRI</option>
+                <option>LIB</option>
+              </select></td>
+            <td><input name="c_cre" type="number" class="form-control" id="c_cre" min="1" step="1" value=""></td>
+            <td><input name="c_imp" type="range" class="form-control" id="c_imp" max="100" min="0" step="1" value="" size="3"></td>
+          </tr>
+        </table>
+        <p>Detail information</p>
+        <table class="table" width="100%" align="center" id="c_detail">
+          <tr>
+            <td>Wording</td>
+            <td><input type="text" class="form-control" id="c_word" name="c_word" size="6" value=""></td>
+          </tr>
+          <tr>
+            <td>Description</td>
+            <td><textarea type="text" class="form-control" id="c_desp" name="c_desp" size="6"></textarea></td>
+          </tr>
+          <tr>
+            <td>Programme</td>
+            <td><button id="c_add_prog" type="button" class="btn btn-default btn-sm" onClick="c_add_prog()"> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+            	<div id="c_pro"></div>
+            </td>
+          </tr>
+        </table>
+        <div align="center">
+          <button id="add_cours" type="button" class="btn btn-primary btn-lg btn-block" onclick="c_add_cours()">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../dist/js/bootstrap-select.js"></script> 
+<script type="text/javascript" src="../js/add_cours.js"></script>
+<script language="javascript">
+	$(function(){
+		$('.selectpicker').selectpicker('render');
+	});
+</script>

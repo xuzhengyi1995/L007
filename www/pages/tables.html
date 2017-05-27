@@ -1,0 +1,191 @@
+<style>
+    .btn_d
+    {
+        width:65px;
+    }
+</style>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">All your cursus 
+            <button id="add_new_cursus" type="button" class="btn btn-default btn-circle" onclick="add_new_cursus_before()">
+                <i class="fa fa-plus"></i>
+            </button>
+            <button id="add_cursus" type="button" class="btn btn-success btn-lg" onclick="import_csv()">
+                <i class="glyphicon glyphicon-save"></i>
+            </button>
+        </h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Click 'Detail' to see all the elements in the cursus.
+            </div>
+
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <table width="100%" class="table table-striped table-bordered table-hover" id="my_cursus">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- add cursus modal -->
+<div class="modal fade" id="addCursusModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-target=".bs-example-modal-lg">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button id="new_cursus_add_close_btn_x" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" >Add new cursus | Only enter sid when already exist</h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body" style="margin-left: auto; margin-right: auto" id="add_new_cursus_check">
+                    <table width="100%" class="table">
+                        <tr>
+                            <th>Sid</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Adminssion</th>
+                            <th>Filiere</th>
+                            <th>Type</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="form-control" id="cursus_tmp_sid" name="cursus_tmp_sid" size="6" value=""></td>
+                            <td><input type="text" class="form-control" id="cursus_tmp_nom" name="cursus_tmp_nom" size="6" value=""></td>
+                            <td><input type="text" class="form-control" id="cursus_tmp_prenom" name="cursus_tmp_prenom" size="6" value=""></td>
+                            <td>
+                                <select class="form-control" id="cursus_tmp_adm" name="cursus_tmp_adm">
+                                    <option value="BR">BR</option>
+                                    <option value="TCBR">TCBR</option>
+                                    <option value="FCBR">FCBR</option>
+                                    <option value="UTT">UTT</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control" id="cursus_tmp_filiere" name="cursus_tmp_filiere">
+                                    <option value="null">NONE</option>
+                                    <option value="MSI">MSI</option>
+                                    <option value="MPL">MPL</option>
+                                    <option value="MRI">MRI</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control" id="cursus_tmp_type" name="cursus_tmp_type">
+                                    <option value="TC">TC</option>
+                                    <option value="BR">BR</option>
+                                    <option value="TCBR">TCBR</option>
+                                    <option value="FCBR">FCBR</option>
+                                    <option value="UTT">UTT</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="new_cursus_add_close_btn" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="new_cursus_add_save_btn" type="button" class="btn btn-primary"  >Add</button>
+            </div>
+        </div>
+    </div>
+</div>   
+<!-- add cursus modal -->
+
+
+<!-- delete cursus modal -->
+<div class="modal fade" id="deleteCursusModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-target=".bs-example-modal-lg">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button id="cursus_delete_close_btn_x" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" >You realy want to delete this cursus?</h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body" id="delete_cursus_check">
+                    <table width="100%" class="table">
+                        <tr>
+                            <th>Cid</th>
+                            <th>Sid</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Adminssion</th>
+                            <th>Filiere</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="form-control" id="d_cursus_tmp_cid" name="d_cursus_tmp_cid" size="6" readonly value=""></td>
+                            <td><input type="text" class="form-control" id="d_cursus_tmp_sid" name="d_cursus_tmp_sid" size="6" readonly value=""></td>
+                            <td><input type="text" class="form-control" id="d_cursus_tmp_nom" name="d_cursus_tmp_nom" size="6" readonly value=""></td>
+                            <td><input type="text" class="form-control" id="d_cursus_tmp_prenom" name="d_cursus_tmp_prenom" size="6" readonly value=""></td>
+                            <td><input type="text" class="form-control" id="d_cursus_tmp_adm" name="d_cursus_tmp_adm" size="6" readonly value=""></td>
+                            <td><input type="text" class="form-control" id="d_cursus_tmp_filiere" name="d_cursus_tmp_filiere" size="6" readonly value=""></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cursus_delete_close_btn" type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                <button id="cursus_delete_save_btn" type="button" class="btn btn-primary"  >Yes</button>
+            </div>
+        </div>
+    </div>
+</div>   
+<!-- delete cursus modal -->
+
+<!-- copy cursus modal -->
+<div class="modal fade" id="copyCursusModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-target=".bs-example-modal-lg">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button id="cursus_copy_close_btn_x" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" >Do you want to copy this cursus?</h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body" id="copy_cursus_check">
+                    <table width="100%" class="table">
+                        <tr>
+                            <th>Cid</th>
+                            <th>Sid</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Adminssion</th>
+                            <th>Filiere</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="form-control" id="c_cursus_tmp_cid" name="c_cursus_tmp_cid" size="6" readonly value=""></td>
+                            <td><input type="text" class="form-control" id="c_cursus_tmp_sid" name="c_cursus_tmp_sid" size="6" readonly value=""></td>
+                            <td><input type="text" class="form-control" id="c_cursus_tmp_nom" name="c_cursus_tmp_nom" size="6" readonly value=""></td>
+                            <td><input type="text" class="form-control" id="c_cursus_tmp_prenom" name="c_cursus_tmp_prenom" size="6" readonly value=""></td>
+                            <td><input type="text" class="form-control" id="c_cursus_tmp_adm" name="c_cursus_tmp_adm" size="6" readonly value=""></td>
+                            <td><input type="text" class="form-control" id="c_cursus_tmp_filiere" name="c_cursus_tmp_filiere" size="6" readonly value=""></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cursus_copy_close_btn" type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                <button id="cursus_copy_save_btn" type="button" class="btn btn-primary"  >Yes</button>
+            </div>
+        </div>
+    </div>
+</div>   
+<!-- copy cursus modal -->
+
+<!-- DataTables JavaScript -->
+<script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+<script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+<script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../dist/js/sb-admin-2.js"></script>
+<script src="../js/tables.js"></script>
+
+<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+
+</body>
+
+</html>
