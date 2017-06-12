@@ -11,7 +11,7 @@ class db
   private $_last_id;
 
   //debug or not.
-  function __consturuct($debug=false)
+  function __construct($debug=false)
   {
     $this->_debug=$debug;
   }
